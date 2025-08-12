@@ -1,0 +1,44 @@
+@media (max-width: 900px) {
+  .dock-menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 -2px 16px rgba(26,34,54,0.13);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2rem 1.2rem 1.1rem 1.2rem;
+    min-height: 70px;
+    z-index: 50;
+    border-top: 1.5px solid #e7c873;
+    border-radius: 1.2rem;
+    gap: 0.5rem;
+  }
+  .dock-menu a {
+    color: #bd9255;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 1.2rem;
+    background: none;
+    transition: background 0.18s, color 0.18s;
+    letter-spacing: 1.2px;
+    border: 2px solid transparent;
+    margin: 0 0.1rem;
+    white-space: nowrap;
+  }
+  .dock-menu a.active, .dock-menu a:focus, .dock-menu a:hover {
+    background: #fff8e1;
+    color: #a87c40;
+    border: 2px solid #e7c873;
+  }
+}
